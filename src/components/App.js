@@ -46,7 +46,7 @@ export class App extends Component {
     return (
       <div className={css.container}>
         <h2 className={css.title}>Please leave feedback</h2>
-        <div className={css.containerBtn}>
+        <div className={css['container-btn']}>
           <button
             id="good"
             type="button"
@@ -73,8 +73,8 @@ export class App extends Component {
           </button>
         </div>
 
-        <h3 className={css.statTitle}>Statistics</h3>
-        <div className={css.statisticContainer}>
+        <h3 className={css['stat-title']}>Statistics</h3>
+        <div className={css['statistic-container']}>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>

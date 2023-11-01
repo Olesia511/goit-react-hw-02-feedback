@@ -13,7 +13,7 @@
   color: var(--color-light);
 }
 .title,
-.statTitle {
+.stat-title {
   width: 100vw;
   padding: 32px;
 }
@@ -35,13 +35,13 @@
   color: var(--color-light);
 }
 
-.containerBtn,
-.statisticContainer {
+.container-btn,
+.statistic-container {
   display: flex;
   gap: 32px;
 }
 
-.statisticContainer {
+.statistic-container {
   width: 100vw;
   padding: 32px;
   background-color: var(--color-light);
