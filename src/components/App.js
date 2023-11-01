@@ -8,8 +8,8 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleIncrement = evt => {
-    const { id } = evt.target;
+  handleIncrement = e => {
+    const { id } = e.target;
 
     if (id === 'good') {
       return this.setState(prevState => ({ good: prevState.good + 1 }));
@@ -79,6 +79,7 @@ export class App extends Component {
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>
         </div>
+
         {totalFeedback > 0 && (
           <div className={css.total}>
             <p>Total number of feedback: {totalFeedback}</p>
