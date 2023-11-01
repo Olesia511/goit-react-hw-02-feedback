@@ -1,4 +1,4 @@
-/* .container {
+.container {
   height: 100vw;
   height: 100vh;
   display: flex;
@@ -12,11 +12,12 @@
   background-color: var(--background-color);
   color: var(--color-light);
 }
+/*
 .title,
 .stat-title {
   width: 100vw;
   padding: 32px;
-}
+}*/
 
 .btn {
   font-weight: 700;
@@ -30,11 +31,12 @@
   -moz-box-shadow: 6px 12px 21px -6px rgba(0, 0, 0, 0.38);
   transition: background-color 400ms linear, color 400ms linear;
 }
+
 .btn:hover {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
-
+/*
 .container-btn,
 .statistic-container {
   display: flex;
@@ -50,9 +52,9 @@
   gap: 78px;
   margin-bottom: 32px;
 }
-
+*/
 .total {
   display: flex;
   flex-direction: column;
   gap: 24px;
-} */
+}
