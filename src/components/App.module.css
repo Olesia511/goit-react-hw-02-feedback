@@ -1,0 +1,58 @@
+.container {
+  height: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  gap: 16px;
+  font-weight: 700;
+  background-color: var(--background-color);
+  color: var(--color-light);
+}
+.title,
+.statTitle {
+  width: 100vw;
+  padding: 32px;
+}
+
+.btn {
+  font-weight: 700;
+  border: none;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-radius: 16px;
+  padding: 12px 32px;
+  box-shadow: 6px 12px 21px -6px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 6px 12px 21px -6px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 6px 12px 21px -6px rgba(0, 0, 0, 0.38);
+  transition: background-color 400ms linear, color 400ms linear;
+}
+.btn:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.containerBtn,
+.statisticContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.statisticContainer {
+  width: 100vw;
+  padding: 32px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  justify-content: center;
+  gap: 78px;
+  margin-bottom: 32px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
