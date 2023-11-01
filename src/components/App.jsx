@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import css from './App.module.css';
+import css from './Feedback.module.css';
 
 export class App extends Component {
   state = {
