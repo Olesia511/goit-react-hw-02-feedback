@@ -1,9 +1,3 @@
-:root {
-  --color-light: #d6d0d0;
-  --background-color: #554853;
-  --color-dark: #251c1c;
-}
-
 .container {
   height: 100vw;
   height: 100vh;
@@ -15,21 +9,21 @@
   padding: 16px;
   gap: 16px;
   font-weight: 700;
-  background-color: var(--background-color);
-  color: var(--color-light);
+  background-color: #554853;
+  color: #d6d0d0;
 }
-/*
+
 .title,
 .stat-title {
   width: 100vw;
   padding: 32px;
-}*/
+}
 
 .btn {
   font-weight: 700;
   border: none;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: #d6d0d0;
+  color: #251c1c;
   border-radius: 16px;
   padding: 12px 32px;
   box-shadow: 6px 12px 21px -6px rgba(0, 0, 0, 0.38);
@@ -39,10 +33,10 @@
 }
 
 .btn:hover {
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: #251c1c;
+  color: #d6d0d0;
 }
-/*
+
 .container-btn,
 .statistic-container {
   display: flex;
@@ -52,13 +46,13 @@
 .statistic-container {
   width: 100vw;
   padding: 32px;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: #d6d0d0;
+  color: #251c1c;
   justify-content: center;
   gap: 78px;
   margin-bottom: 32px;
 }
-*/
+
 .total {
   display: flex;
   flex-direction: column;
