@@ -14,7 +14,7 @@
 }
 
 .title,
-.stat-title {
+.statTitle {
   width: 100vw;
   padding: 32px;
 }
@@ -37,13 +37,13 @@
   color: #d6d0d0;
 }
 
-.container-btn,
-.statistic-container {
+.containerBtn,
+.statisticContainer {
   display: flex;
   gap: 32px;
 }
 
-.statistic-container {
+.statisticContainer {
   width: 100vw;
   padding: 32px;
   background-color: #d6d0d0;

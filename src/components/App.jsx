@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import css from './Feedback.module.css';
+import styles from './Feedback.module.css';
 
 export class App extends Component {
   state = {
@@ -44,13 +44,13 @@ export class App extends Component {
     );
 
     return (
-      <div className={css.container}>
-        <h2 className={css.title}>Please leave feedback</h2>
-        <div className={css['container-btn']}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Please leave feedback</h2>
+        <div className={styles.containerBtn}>
           <button
             id="good"
             type="button"
-            className={css.btn}
+            className={styles.btn}
             onClick={this.handleIncrement}
           >
             Good
@@ -58,7 +58,7 @@ export class App extends Component {
           <button
             id="neutral"
             type="button"
-            className={css.btn}
+            className={styles.btn}
             onClick={this.handleIncrement}
           >
             Neutral
@@ -66,22 +66,22 @@ export class App extends Component {
           <button
             id="bad"
             type="button"
-            className={css.btn}
+            className={styles.btn}
             onClick={this.handleIncrement}
           >
             Bad
           </button>
         </div>
 
-        <h3 className={css['stat-title']}>Statistics</h3>
-        <div className={css['statistic-container']}>
+        <h3 className={styles.statTitle}>Statistics</h3>
+        <div className={styles.statisticContainer}>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>
         </div>
 
         {totalFeedback > 0 && (
-          <div className={css.total}>
+          <div className={styles.total}>
             <p>Total number of feedback: {totalFeedback}</p>
             <p>Positive feedback: {percentageFeedback}%</p>
           </div>
