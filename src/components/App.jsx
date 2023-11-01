@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import css from './App.module.css';
-import './index.css';
-console.log(css);
 
 export class App extends Component {
   state = {

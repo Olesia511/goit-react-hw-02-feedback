@@ -1,3 +1,9 @@
+:root {
+  --color-light: #d6d0d0;
+  --background-color: #554853;
+  --color-dark: #251c1c;
+}
+
 .container {
   height: 100vw;
   height: 100vh;
