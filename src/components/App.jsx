@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styles from './Feedback.module.css';
+import styles from './App.module.css';
+
 
 export class App extends Component {
   state = {
