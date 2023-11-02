@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styles from './App.module.css';
+import { GlobalStyle } from './ClobalStyles';
+import { Button, ContainerBtn, Title, BasicContainer, StatisticsTitle, StatisticsContainer, TotalFeedbackContainer } from './App.styled';
 
 
 export class App extends Component {
@@ -45,49 +46,38 @@ export class App extends Component {
     );
 
     return (
-      <div className={styles.container}>
-        <h2 className={styles.title}>Please leave feedback</h2>
-        <div className={styles.containerBtn}>
-          <button
-            id="good"
-            type="button"
-            className={styles.btn}
-            onClick={this.handleIncrement}
-          >
-            Good
-          </button>
-          <button
-            id="neutral"
-            type="button"
-            className={styles.btn}
-            onClick={this.handleIncrement}
-          >
-            Neutral
-          </button>
-          <button
-            id="bad"
-            type="button"
-            className={styles.btn}
-            onClick={this.handleIncrement}
-          >
-            Bad
-          </button>
-        </div>
 
-        <h3 className={styles.statTitle}>Statistics</h3>
-        <div className={styles.statisticContainer}>
+      <BasicContainer>
+      
+        <Title>Please leave feedback</Title>
+        <ContainerBtn>
+          <Button id="good" type="button" onClick={this.handleIncrement}>
+            Good
+          </Button>
+          <Button id="neutral" type="button" onClick={this.handleIncrement}>
+            Neutral
+          </Button>
+          <Button id="bad" type="button" onClick={this.handleIncrement}>
+            Bad
+          </Button>
+        </ContainerBtn>
+
+        <StatisticsTitle>Statistics</StatisticsTitle>
+        <StatisticsContainer>
           <p>Good: {good}</p>
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>
-        </div>
+        </StatisticsContainer>
 
         {totalFeedback > 0 && (
-          <div className={styles.total}>
+          <TotalFeedbackContainer>
             <p>Total number of feedback: {totalFeedback}</p>
             <p>Positive feedback: {percentageFeedback}%</p>
-          </div>
+          </TotalFeedbackContainer>
         )}
-      </div>
+      
+        <GlobalStyle />
+        </BasicContainer>
     );
   }
 }
